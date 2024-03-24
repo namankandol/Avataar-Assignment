@@ -37,23 +37,12 @@ const Carousel = () => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={2.7}
+        slidesPerView={2.5}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 200,
           modifier: 3,
-        }}
-        breakpoints={{
-          1000: {
-            slidesPerView: 2.3,
-          },
-          800: {
-            slidesPerView: 1.7,
-          },
-          500: {
-            slidesPerView: 1.3,
-          },
         }}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
