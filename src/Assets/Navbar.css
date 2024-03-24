@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#navbar {
+  display: flex;
+  position: relative;
+  background-color: #2f302c;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#main-menu {
+  list-style-type: none;
+  display: flex;
+  font-size: 0.8rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(72, 194, 251);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dropdown {
+  background-color: #2f302c;
+  border: none;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.more {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more:hover {
+  color: rgb(72, 194, 251);
+}
+
+.more:hover svg {
+  fill: rgb(72, 194, 251);
+}
+
+.dropdown-content {
+  background-color: #2f302c;
+  position: absolute;
+  top: 5rem;
+  border-radius: 7px;
+}
+
+.dropdown-content li {
+  padding: 1rem;
+}
+
+.dropdown-content li:hover {
+  background-color: #d3d2d2;
+  color: #2f302c;
+  border-radius: 5px;
+}
+
+.dropdown-content li:hover a {
+  color: #2f302c;
+  font-weight: 500;
+}
+
+.search-bar {
+  background-color: #2f302c;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  background-color: #2f302c;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0.5px solid white;
+  padding: 0.2rem 10rem 0.3rem 0;
+}
+
+.search-bar svg {
+  margin-right: 1rem;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .main-menu {
+    font-size: 0.5rem;
+  }
+  .search-bar input {
+    padding: 0.2rem 5rem 0.3rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+  .main-menu {
+    font-size: 0.3rem;
+  }
+  .search-bar input {
+    padding: 0.2rem 3rem 0.3rem 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .search-bar {
+    visibility: collapse;
+    position: absolute;
+  }
+  .dropdown-content {
+    right: 1rem;
+  }
+}
